@@ -1,0 +1,7 @@
+<p>card-results works!</p>
+
+<app-card-timeline 
+    *ngFor="let card of queryResult|keyvalue"
+    [cardName]="card.key"
+    [data]="card.value">
+</app-card-timeline>

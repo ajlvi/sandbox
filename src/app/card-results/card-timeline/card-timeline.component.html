@@ -1,0 +1,6 @@
+<div>timeline for {{cardName}} 
+    <div *ngFor="let set of sets_in_order">
+        <i class="ss ss-{{set|lowercase}}"></i> 
+        {{appearanceCount(set)[0]}} / {{appearanceCount(set)[1]}}
+    </div>
+</div>
